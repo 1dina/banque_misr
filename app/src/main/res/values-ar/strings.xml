@@ -1,0 +1,16 @@
+<resources>
+    <string name="arabic">EN</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forget_sm">نسيت اسم المستخدم/كلمة المرور؟</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="need_help">مزيد من المساعدة؟</string>
+    <string name="contact">اتصل بنا</string>
+    <string name="our_products">منتجاتنا</string>
+    <string name="exchange_rate">سعر الصرف</string>
+    <string name="security_tips">نصائح أمنية</string>
+    <string name="nearest_atm">أقرب فرع أو ماكينة صراف آلي</string>
+
+
+
+</resources>

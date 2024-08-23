@@ -1,6 +1,5 @@
 package com.example.banquemisr.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -10,6 +9,7 @@ import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,
@@ -31,7 +31,9 @@ private val LightColorScheme = lightColorScheme(
     onBackground = Color(0xFF1C1B1F),
     onSurface = Color(0xFF1C1B1F),
     */
+
 )
+
 
 @Composable
 fun BanqueMisrTheme(
@@ -48,6 +50,16 @@ fun BanqueMisrTheme(
 
         darkTheme -> DarkColorScheme
         else -> LightColorScheme
+    }
+    val systemUiController = rememberSystemUiController()
+    if (darkTheme) {
+        systemUiController.setSystemBarsColor(
+            color = LightPinkishRed
+        )
+    } else {
+        systemUiController.setSystemBarsColor(
+            color = White
+        )
     }
 
     MaterialTheme(
